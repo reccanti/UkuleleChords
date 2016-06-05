@@ -20,6 +20,9 @@ class ChordController extends Controller {
                 $suffix = 'b';
             }
         }
-        return $chord[0] . $suffix . ' Chord';
+        // return $chord[0] . $suffix . ' Chord';
+        return view('chord', [
+            'chord' => $chord[0] . $suffix . ' Chord'
+        ]);
     }
 }
