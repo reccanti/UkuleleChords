@@ -33,12 +33,42 @@
             .title {
                 font-size: 96px;
             }
+            
+            .chord_list {
+                padding: 0;
+                margin: 0;
+            }
+            
+            .chord_list li {
+                display: inline;
+                list-style: none;
+                margin: 0 10px;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <svg id="chord" width="500" height="500"></svg>
+                <div class="links">
+                    <div>
+                        <h3>Major Chords</h3>
+                        <ul class="chord_list">
+                            <li><a href="./A">A</a></li>
+                            <li><a href="./B">B</a></li>
+                            <li><a href="./C">C</a></li>
+                            <li><a href="./D">D</a></li>
+                            <li><a href="./E">E</a></li>
+                            <li><a href="./F">F</a></li>
+                            <li><a href="./G">G</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <svg 
+                    id="chord" 
+                    width="500" 
+                    height="500"
+                    data-chord="{{ $chord }}">
+                </svg>
             </div>
         </div>
         <script type="text/javascript" src="{!! asset('js/bundle.js') !!}"></script>
