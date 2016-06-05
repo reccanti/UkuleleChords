@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->action('Chord\ChordController@parseChord', ['C']);
 });
 
 Route::get('/chord/{name}', 'Chord\ChordController@parseChord');

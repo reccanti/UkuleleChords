@@ -50,6 +50,7 @@
         <div class="container">
             <div class="content">
                 <div class="links">
+                    <h1>Ukulele Chords</h1>
                     <div>
                         <h3>Major Chords</h3>
                         <ul class="chord_list">
